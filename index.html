@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes page</title>
+    <!-------------bootstrap.min.css start---------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-------------bootstrap.min.css close---------------->
+    
+    <!-------------fontawesome all.min.css start---------------->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-------------fontawesome all.min.css close---------------->
+    
+    <!-------------animate on scroll.css start---------------->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-------------animate on scroll.css close---------------->
+
+    <!-------------Custon CSS start---------------->
+    <link rel="stylesheet" href="css/style.css">
+    <!-------------Custon CSS close---------------->
+</head>
+<body>
+  <!-----------------------------navbar start------------------------------------>
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-transperent">
+        <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
+                <img style="height: 60px;" src="img/logo-03_3_3.png" alt="logo">
+            </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+                <!---<span class="navbar-toggler-icon"></span>--->
+            </button>
+            <div id="navbar4">
+                 <ul style="list-style: none;margin: 8px 0px;">
+                     <li style="margin: 8px 20px;"><a style="text-decoration: none;" href="#">About Us</a></li>
+                     <li style="margin: 8px 20px;"><a style="text-decoration: none;" href="#">Our Producers</a></li>
+                     <li style="margin: 8px 20px;"><a style="text-decoration: none;" href="#">Farmblog</a></li>
+                 </ul>
+            </div>
+
+    
+    
+            <div style="display: flex;"><!---class="collapse navbar-collapse"----->
+                <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+                    <li class="nav-item px-lg-2"> <a style="color: #fff;" class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span><span class="sign-up"> <i class="fas fa-sign-in-alt"> Sign Up</i></span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span><span class="login"><i class="fas fa-user"> Login</i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-----------------------------navbar close------------------------------------>
+
+
+<!-----------------------------Search-box start here------------------------------------>
+<section class="container-fluid">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 categories" style="display: flex;list-style: none;">
+                <li style="margin: 28px 10px;">
+                    <div class="browse">
+                        <select class="mdb-select md-form colorful-select dropdown-primary">
+                        <option value="1">Browse Groceries</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        </select>
+                    </div>
+                </li>
+                <li style="margin: 28px;" class="dis">
+                    <a style="text-decoration: none; color: gray;font-weight: bold;" href="#">Shop</a>
+                </li>
+                <li style="margin: 28px;" class="dis">
+                    <a style="text-decoration: none; color: gray;font-weight: bold;" href="sub_page/racipes.html">Recipes</a>
+                </li>
+                <li style="margin: 28px;" class="dis">
+                    <a style="text-decoration: none; color: gray;font-weight: bold;" href="#">New In</a>
+                </li>
+                <li style="margin: 28px;" class="dis">
+                    <a style="text-decoration: none; color: gray;font-weight: bold;" href="#">Offers</a>
+                </li>
+            </ul>
+            </div>
+            
+            <div class="col-md-6 col-sm-6">
+                <ul style="display: flex;list-style: none;float: right;">
+                <li class="search" style="margin: 18px 0px;">
+                    <input style="max-width: 300px;" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </li>
+            </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-----------------------------Search-box close here------------------------------------>
+
+
+
+<!-----------------------------header start here------------------------------------>
+<section class="container-fluid header" data-aos="fade-up">
+    <h1 style="padding-top: 60px;">
+        Recipes
+    </h1>
+    <p>
+        Welcome to our home of delicious seasonal recipes. Whether you fancy something quick and healthy or a special occasion feast, we'll show you how to make a dish you love. To make things easy, you can add all the ingredients straight to your basket. What are you waiting for?
+    </p>
+</section>
+
+<!-----------------------------header close here------------------------------------>
+
+
+
+<!-----------------------------tabs start here------------------------------------>
+<section data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+              <div class="row">
+                <div class="col-xs-12 ">
+                  <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Fast Food</a>
+                      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Meat</a>
+                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Fish</a>
+                      <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Vegetables</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <section class="container-fluid racipe">
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-1 racipe-item" style="background-image: url('img/Carrot_top_pesto.jpg');margin: 10px;">
+                             Cheesy Baked Gnocchi with Spinach and Tomatoes
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-2 racipe-item" style="background-image: url('img/Copy_of_MK_Carrot.jpg');margin: 10px;">
+                             Homemade Baked Beans
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-3 racipe-item" style="background-image: url('img/Teriyaki_trout_Farmdrop19_June1033011.jpg');margin: 10px;">
+                             Kale Pesto
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-4 racipe-item" style="background-image: url('img/Recipe_-_pidgeon_preview.jpeg');margin: 10px;">
+                             Chicken Thigh & Root Gratin
+                         </div></a>
+                     </section>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <section class="container-fluid racipe">
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-1 racipe-item" style="background-image: url('img/Carrot_top_pesto.jpg');margin: 10px;">
+                             Cheesy Baked Gnocchi with Spinach and Tomatoes
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-2 racipe-item" style="background-image: url('img/Copy_of_MK_Carrot.jpg');margin: 10px;">
+                             Homemade Baked Beans
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-3 racipe-item" style="background-image: url('img/Teriyaki_trout_Farmdrop19_June1033011.jpg');margin: 10px;">
+                             Kale Pesto
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-4 racipe-item" style="background-image: url('img/Recipe_-_pidgeon_preview.jpeg');margin: 10px;">
+                             Chicken Thigh & Root Gratin
+                         </div></a>
+                     </section>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                      <section class="container-fluid racipe">
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-1 racipe-item" style="background-image: url('img/Carrot_top_pesto.jpg');margin: 10px;">
+                             Cheesy Baked Gnocchi with Spinach and Tomatoes
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-2 racipe-item" style="background-image: url('img/Copy_of_MK_Carrot.jpg');margin: 10px;">
+                             Homemade Baked Beans
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-3 racipe-item" style="background-image: url('img/Teriyaki_trout_Farmdrop19_June1033011.jpg');margin: 10px;">
+                             Kale Pesto
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-4 racipe-item" style="background-image: url('img/Recipe_-_pidgeon_preview.jpeg');margin: 10px;">
+                             Chicken Thigh & Root Gratin
+                         </div></a>
+                     </section>
+                    </div>
+                    <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                      <section class="container-fluid racipe">
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-1 racipe-item" style="background-image: url('img/Carrot_top_pesto.jpg');margin: 10px;">
+                             Cheesy Baked Gnocchi with Spinach and Tomatoes
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-2 racipe-item" style="background-image: url('img/Copy_of_MK_Carrot.jpg');margin: 10px;">
+                             Homemade Baked Beans
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-3 racipe-item" style="background-image: url('img/Teriyaki_trout_Farmdrop19_June1033011.jpg');margin: 10px;">
+                             Kale Pesto
+                         </div></a>
+                         <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-4 racipe-item" style="background-image: url('img/Recipe_-_pidgeon_preview.jpeg');margin: 10px;">
+                             Chicken Thigh & Root Gratin
+                         </div></a>
+                     </section>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+        </div>
+</section>
+
+<!-----------------------------Tabs close here------------------------------------>
+
+
+
+<!-----------------------------Racipes start here------------------------------------>
+
+<section class="container-fluid racipe"  data-aos="zoom-in-up">
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-1 racipe-item" style="background-image: url('img/Carrot_top_pesto.jpg');">
+        Cheesy Baked Gnocchi with Spinach and Tomatoes
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-2 racipe-item" style="background-image: url('img/Copy_of_MK_Carrot.jpg');">
+        Homemade Baked Beans
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div data-aos="fade-up" class="item-3 racipe-item" style="background-image: url('img/Teriyaki_trout_Farmdrop19_June1033011.jpg');">
+        Kale Pesto
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-4 racipe-item" style="background-image: url('img/Recipe_-_pidgeon_preview.jpeg');">
+        Chicken Thigh & Root Gratin
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div class="item-5 racipe-item" style="background-image: url('img/Halloumi_Orzo_and_tomato_bake__Farmdrop19_Apr2330227_(1).jpg');">
+        Pear & Ginger Upside Down Cake
+    </div></a>
+</section>
+
+
+<section class="container-fluid racipe">
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-1 racipe-item" style="background-image: url('img/sprouyt_gratin_.jpg');">
+        Brussels Sprout, Bacon and Cheddar Gratin
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-2 racipe-item" style="background-image: url('img/Apple_crumble_cake_FD20_Sept7.jpg');">
+        Apple Cinnamon Crumble Cake
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div data-aos="fade-up" class="item-3 racipe-item" style="background-image: url('img/Chilli_garlic_prawns_FD20_August51662.jpg');">
+        Garlic and Chilli Prawns
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-4 racipe-item" style="background-image: url('img/pork_noodles.jpg');">
+        Vietnamese Noodle Salad with Pork Patties
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-5 racipe-item" style="background-image: url('img/chocolate_tahini_babkaFD20_Sept21.jpg');">
+        Chocolate Tahini Babka
+    </div></a>
+</section>
+
+<section class="container-fluid racipe">
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-1 racipe-item" style="background-image: url('img/hMnLsDy8.jpeg');">
+        Cheesy Baked Gnocchi with Spinach and Tomatoes
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-2 racipe-item" style="background-image: url('img/baked_beans.jpg');">
+        Homemade Baked Beans
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div data-aos="fade-up" class="item-3 racipe-item" style="background-image: url('img/Kale_pesto_FD20_Sept7.jpg');">
+        Kale Pesto
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-4 racipe-item" style="background-image: url('img/Recipe_-_Chicken_Thigh_bake.jpg');">
+        Chicken Thigh & Root Gratin
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-5 racipe-item" style="background-image: url('img/upside_down_pear_cakeFD20_Sept21.jpg');">
+        Pear & Ginger Upside Down Cake
+    </div></a>
+</section>
+
+<section class="container-fluid racipe">
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-1 racipe-item" style="background-image: url('img/Recipe_Beef_PhoFarmdrop17_June070272.jpg');">
+        Vietnamese Beef Noodle Phở
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-2 racipe-item" style="background-image: url('img/fritters.jpg');">
+        Sweetcorn & Feta Fritters
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div data-aos="fade-up" class="item-3 racipe-item" style="background-image: url('img/curry.jpg');">
+        Classic Chicken Korma
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-4 racipe-item" style="background-image: url('img/unspecified-30.jpeg');">
+        Spiced Roasted Rainbow Carrots with Goat's Curd
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-5 racipe-item" style="background-image: url('img/squash_risotto.jpg');">
+        Roast Squash and Sage Risotto
+    </div></a>
+</section>
+
+<section class="container-fluid racipe">
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-1 racipe-item" style="background-image: url('img/unspecified-30\ \(1\).jpeg');">
+       Spiced Roasted Rainbow Carrots with Goat's Curd
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-2 racipe-item" style="background-image: url('img/Chickpea_salad_Farmdrop18_May811786_preview.jpeg');">
+        Herby Chickpea Salad with Tahini Dressing
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div data-aos="fade-up" class="item-3 racipe-item" style="background-image: url('img/veg_curry.jpg');">
+        Easy Veggie Curry
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-4 racipe-item" style="background-image: url('img/Pork_and_Bean_stewFarmdrop18_Feb239501_preview.jpeg');">
+        Pork and Cannellini Bean Stew
+    </div></a>
+    <a style="text-decoration: none;color: #fff;" href="sub_page/racipes.html"><div  data-aos="zoom-in-up" class="item-5 racipe-item" style="background-image: url('img/Purple_Sprouting_Broccoli_in_Anchovy_Butter_Dressing_Farmdrop18_May111352_preview-2.jpeg');">
+        Purple Sprouting Broccoli in Anchovy Butter Dressing
+    </div></a>
+</section><br>
+
+<div class="container-fluid" style="width: 100%;margin: 0px 0px 30px 0px; text-align: center;">
+    <button style="padding: 5px 15px; border: none; border-radius: 3px; font-weight: bold; background-color: rgb(165, 34, 56); color: white;">Load more recipes &nbsp; <i class="fas fa-arrow-right"></i></button>
+</div>
+
+<!-----------------------------Racipes close here------------------------------------>
+
+
+
+<!-----------------------------Footer start here------------------------------------>
+<footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title"><img style="height: 60px;" src="img/logo-03_3_3.png" alt="logo"><span></span></h5>
+                            <p>This is a trusted <br> shopify website. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Get Started</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Event/Tickets</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Stores</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">About</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Get Started<span></span></h5>
+                            <p>Get access to your full Training and Marketing Suite.</p>
+                            <a class="btn" href="#." target="_blank">Register Now</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Contact Us<span></span></h5>
+
+                            <p><a href="#" title="glorythemes">info@moneybackking.com</a></p>
+                            <ul class="social-footer2">
+                                <li class=""><a title="youtube" target="_blank" href="https://www.youtube.com/"><img alt="youtube" width="30" height="30" src="img/youtube.png"></a>
+                                </li>
+                                <li class=""><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30" src="img/facebook.png"></a>
+                                </li>
+                                <li class=""><a href="https://twitter.com" target="_blank" title="Twitter"><img alt="Twitter" width="30" height="30" src="img/twitter.png"></a>
+                                </li>
+                                <li class=""><a title="instagram" target="_blank" href="https://www.instagram.com/"><img alt="instagram" width="30" height="30" src="img/instagram.png"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright shopify © 2020. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+<!-----------------------------Footer close here------------------------------------>
+
+    <!-------------jquery.min.js----------------->
+    <script src="js/jquery.min.js"></script>
+
+    <!-------------bootstrap.min.js----------------->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-------------aos animations.js----------------->
+    <script src="js/aos.js"></script>
+    
+    <!-------------choice .js------------->
+    <script src="js/choices.js"></script>
+
+    <!-------------custom javascript------------->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
